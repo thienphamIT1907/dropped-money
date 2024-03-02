@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Husky Start...\n"
+
+echo "Checking commit before push..."
+echo "--------------------------------"
+
+
+echo "Checking ESlint..."
+echo "--------------------------------"
+yarn lint
+
+echo "Checking ESlint..."
+echo "--------------------------------"
+yarn lint
+
+echo "Fixing ESlint erros..."
+echo "--------------------------------"
+yarn lint-fix
+
+echo "Checking Prettier"
+echo "--------------------------------"
+yarn pretty
+
+
+echo "--------------------------------"
+echo "\nHusky Done..."
