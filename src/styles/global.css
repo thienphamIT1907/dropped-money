@@ -7,3 +7,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3c83f68d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #172554;
+}
