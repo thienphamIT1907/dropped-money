@@ -1,5 +1,5 @@
-import Summary from '@/page/SummaryPage';
+import SummaryContainer from '@/containers/SummaryContainer';
 
-const SummaryPage = () => <Summary />;
+const SummaryPage = () => <SummaryContainer />;
 
 export default SummaryPage;

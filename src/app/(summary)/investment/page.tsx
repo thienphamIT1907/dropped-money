@@ -1,5 +1,5 @@
-import React from 'react';
+import InvestmentContainer from '@/containers/InvestmentContainer';
 
-const InvestmentPage = () => <div>InvestmentPage</div>;
+const InvestmentPage = () => <InvestmentContainer />;
 
 export default InvestmentPage;

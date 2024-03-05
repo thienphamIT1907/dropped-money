@@ -11,7 +11,7 @@ import {
   RiLineChartFill,
 } from '@remixicon/react';
 
-const Summary = () => (
+const SummaryContainer = () => (
   <div className="grid size-full h-full auto-rows-max grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-6">
     <div className="col-span-1">
       <CardInfo icon={RiArrowDownFill} title="Earnings" />
@@ -40,4 +40,4 @@ const Summary = () => (
   </div>
 );
 
-export default Summary;
+export default SummaryContainer;
