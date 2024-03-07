@@ -1,8 +1,8 @@
-import { type RemixiconComponentType } from '@remixicon/react';
-import { BadgeDelta, Card, Icon } from '@tremor/react';
+import { Badge } from '@/components/ui/badge';
+import { RiArrowRightUpLine } from '@remixicon/react';
 
 type CardInfoProps = {
-  icon: RemixiconComponentType;
+  icon: JSX.Element;
   amount: number;
   note: string;
   title: string;
@@ -16,35 +16,20 @@ const CardInfo = ({
   exchangeRate,
   title,
 }: CardInfoProps) => (
-  <Card
-    className="flex flex-col items-start justify-center rounded-xl px-6 py-4"
-    decoration="top"
-    decorationColor="indigo"
-  >
-    <div className="flex items-center">
-      <Icon
-        className="my-2 ml-0 mr-2 p-0"
-        color="indigo"
-        icon={icon}
-        size="lg"
-      />
-      <h3 className="text-sm text-gray-600 ">{title}</h3>
-    </div>
-    <div className="flex items-center gap-2">
-      <p className="pl-1 text-3xl font-medium text-tremor-content-strong ">
-        $34,743
-      </p>
-      <BadgeDelta
-        className="rounded-full"
-        deltaType="moderateIncrease"
-        isIncreasePositive={true}
-        size="xs"
-      >
+  <div className="flex flex-col items-start justify-center gap-2 rounded-xl border border-solid border-gray-300 px-6 py-4">
+    <section className="flex items-center gap-3">
+      {icon}
+      {title}
+    </section>
+    <section className="flex items-center gap-2">
+      <p className="inline-block pl-1 text-3xl font-semibold">$34,743</p>
+      <Badge className="flex" variant="default">
+        <RiArrowRightUpLine className="mr-1" size={15} />
         +9.3%
-      </BadgeDelta>
-    </div>
+      </Badge>
+    </section>
     <p className="mt-2 pl-2 text-xs text-gray-400">+19.8$ than last month</p>
-  </Card>
+  </div>
 );
 
 export default CardInfo;

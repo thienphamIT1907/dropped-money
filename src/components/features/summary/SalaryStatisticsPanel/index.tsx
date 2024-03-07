@@ -1,4 +1,3 @@
-import { BarChart, EventProps } from '@tremor/react';
 import { useState } from 'react';
 
 const chartdata = [
@@ -65,23 +64,23 @@ const chartdata = [
 ];
 
 const SalaryStatisticsPanel = () => {
-  const [value, setValue] = useState<EventProps>(null);
-  return (
-    <div>
-      <h3 className="text-lg font-medium text-tremor-content-strong">
-        Salary Per Month
-      </h3>
-      <BarChart
-        categories={['2022', '2023']}
-        className="mt-6"
-        colors={['gray', 'blue']}
-        data={chartdata}
-        index="date"
-        onValueChange={(v) => setValue(v)}
-        yAxisWidth={30}
-      />
-    </div>
-  );
+  // const [value, setValue] = useState<EventProps>(null);
+  // return (
+  //   <div>
+  //     <h3 className="text-lg font-medium">
+  //       Salary Per Month
+  //     </h3>
+  //     <BarChart
+  //       categories={['2022', '2023']}
+  //       className="mt-6"
+  //       colors={['gray', 'blue']}
+  //       data={chartdata}
+  //       index="date"
+  //       onValueChange={(v) => setValue(v)}
+  //       yAxisWidth={30}
+  //     />
+  //   </div>
+  // );
 };
 
 export default SalaryStatisticsPanel;

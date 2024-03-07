@@ -1,4 +1,3 @@
-import { AreaChart } from '@tremor/react';
 
 const chartdata = [
   {
@@ -67,14 +66,14 @@ const dataFormatter = (number: any) =>
   `$${Intl.NumberFormat('us').format(number).toString()}`;
 
 const TotalSavingPanel = () => (
-  <AreaChart
-    categories={['SemiAnalysis', 'The Pragmatic Engineer']}
-    className="h-80"
-    colors={['indigo', 'rose']}
-    data={chartdata}
-    index="date"
-    valueFormatter={dataFormatter}
-    yAxisWidth={60}
-  />
+  // <AreaChart
+  //   categories={['SemiAnalysis', 'The Pragmatic Engineer']}
+  //   className="h-80"
+  //   colors={['indigo', 'rose']}
+  //   data={chartdata}
+  //   index="date"
+  //   valueFormatter={dataFormatter}
+  //   yAxisWidth={60}
+  // />
 );
 export default TotalSavingPanel;

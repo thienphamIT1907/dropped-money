@@ -15,9 +15,11 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@headlessui/tailwindcss": "^0.2.0",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
     "@remixicon/react": "^4.2.0",
-    "@tremor/react": "^3.14.1",
     "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
     "dayjs": "^1.11.10",
     "framer-motion": "^11.0.8",
     "lint-staged": "^15.2.2",
@@ -26,6 +28,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^2.15.1"
   },
   "devDependencies": {

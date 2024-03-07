@@ -1,5 +1,14 @@
-import { RiShutDownLine } from '@remixicon/react';
-import { Button, Dialog, DialogPanel, Icon } from '@tremor/react';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
+import { RiLogoutBoxLine } from '@remixicon/react';
 import { useState } from 'react';
 
 const LogoutButton = () => {
@@ -10,23 +19,26 @@ const LogoutButton = () => {
   };
   return (
     <div className="">
-      <button
-        className="mt-1 flex w-full items-center justify-start gap-x-2 rounded-lg p-2 transition-all hover:bg-blue-100"
-        onClick={handleLogout}
-      >
-        <Icon icon={RiShutDownLine} size="md" />
-        <span>Logout</span>
-      </button>
-      <Dialog onClose={(val) => setIsOpen(val)} open={isOpen} static={true}>
-        <DialogPanel className="flex flex-col items-center justify-center text-center">
-          <p className=" mt-2 text-tremor-default leading-6 text-tremor-content">
-            Are you sure you want to logout ?
-          </p>
-          <Button className="mt-8 w-1/2" onClick={() => setIsOpen(false)}>
-            Logout
-          </Button>
-        </DialogPanel>
-      </Dialog>
+      <hr />
+      <AlertDialog>
+        <AlertDialogTrigger className="mt-1 flex w-full items-center justify-start gap-x-4 rounded-lg p-4 transition-all hover:bg-blue-100 ">
+          <RiLogoutBoxLine />
+          <span>Logout</span>
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle className="flex items-center justify-start gap-x-2">
+              <RiLogoutBoxLine /> Logout
+            </AlertDialogTitle>
+            <AlertDialogDescription>
+              Are you sure you want to logout ?
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction>OK</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 };

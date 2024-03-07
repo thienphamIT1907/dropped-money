@@ -1,36 +1,35 @@
 import { SideBarMenu } from '@/components/common/SidebarMenu/types';
 import {
-  RiArrowLeftRightFill,
-  RiBarChart2Fill,
-  RiStackFill,
-  RiWallet2Fill,
+  RiArrowLeftRightLine,
+  RiHomeOfficeLine,
+  RiStackLine,
+  RiWallet3Line,
 } from '@remixicon/react';
-
 export const SIDEBAR_ROUTES: SideBarMenu[] = [
   {
     id: 1,
-    icon: RiBarChart2Fill,
+    Icon: <RiHomeOfficeLine />,
     title: 'Summary',
     isActive: true,
     href: '/',
   },
   {
     id: 2,
-    icon: RiWallet2Fill,
+    Icon: <RiWallet3Line />,
     title: 'Salary',
     isActive: false,
     href: '/salary',
   },
   {
     id: 3,
-    icon: RiStackFill,
+    Icon: <RiStackLine />,
     title: 'Investment',
     isActive: false,
     href: '/investment',
   },
   {
     id: 4,
-    icon: RiArrowLeftRightFill,
+    Icon: <RiArrowLeftRightLine />,
     title: 'Transactions',
     isActive: false,
     href: '/transactions',

@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@tremor/react';
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,7 +21,7 @@ const NotFoundPage = () => {
         src={`/assets/not-found/not-found-${generateRandomNotfoundId()}.gif`}
         width={700}
       />
-      <Button variant="primary">
+      <Button variant="default">
         <Link href="/">Back to Home</Link>
       </Button>
     </div>

@@ -1,6 +1,5 @@
 import { SideBarMenu } from '@/components/common/SidebarMenu/types';
-import { twClassMerge } from '@/utils/tailwindCustom';
-import { Icon } from '@tremor/react';
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,7 +7,7 @@ type SidebarItemProps = Omit<SideBarMenu, 'id'>;
 
 const SidebarItem = ({
   title,
-  icon,
+  Icon,
   href,
   isActive = false,
 }: SidebarItemProps) => {
@@ -17,14 +16,14 @@ const SidebarItem = ({
   return (
     <Link href={href}>
       <div
-        className={twClassMerge(
-          'p-2 w-full rounded-lg flex justify-start items-center gap-x-2 mt-1',
+        className={cn(
+          'p-4 w-full rounded-lg flex justify-start items-center gap-x-4 mt-1',
           pathname === href
             ? 'bg-blue-950 text-white shadow-md'
             : 'hover:bg-blue-100 transition-all',
         )}
       >
-        <Icon icon={icon} size="md" />
+        {Icon}
         {title}
       </div>
     </Link>

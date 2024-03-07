@@ -1,10 +1,9 @@
-import { RiUser2Fill } from '@remixicon/react';
-import { Icon } from '@tremor/react';
+import { RiUser3Line } from '@remixicon/react';
 
 const UserAvatar = () => (
-  <div className="flex gap-x-1">
-    <Icon icon={RiUser2Fill} size="lg" />
-    <div>
+  <div className="flex items-center justify-center gap-x-4">
+    <RiUser3Line size={25} />
+    <div className="leading-7">
       <p>Pham Anh Thien</p>
       <p className="text-sm text-gray-400">thienpham@gmail.com</p>
     </div>

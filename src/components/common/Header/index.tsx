@@ -1,5 +1,5 @@
 import UserAvatar from '@/components/common/UserAvatar';
-import { upperCaseFirstLetter } from '@/utils/tools';
+import { upperCaseFirstLetter } from '@/lib/tools';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div className="flex w-full items-center justify-between gap-x-8 rounded-md bg-white px-4 py-2 shadow-sm">
-      <h2 className="xs:min-w-[200px] text-xl font-medium">
+      <h2 className="xs:min-w-[200px] text-lg font-medium">
         {generateHeaderByCurrentPathname()}
       </h2>
       <UserAvatar />

@@ -1,2 +1,5 @@
 /node_modules
 /dist
+
+# Skip check shadcn components
+src/components/ui/*.tsx
