@@ -8,3 +8,5 @@ export interface Route {
 export interface BasicLayoutProps {
   children: ReactNode;
 }
+
+interface RealFundCertificate {}

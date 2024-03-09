@@ -1,5 +1,5 @@
-import React from 'react';
+import SalaryContainer from '@/containers/SalaryContainer';
 
-const SalaryPage = () => <div>SalaryPage</div>;
+const SalaryPage = () => <SalaryContainer />;
 
 export default SalaryPage;
