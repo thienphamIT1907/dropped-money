@@ -3,7 +3,14 @@
 import DemoChart from '@/components/chart/DemoChart';
 import CardInfo from '@/components/common/CardInfo';
 import { DataTableDemo } from '@/components/features/investment/Fmarket/DataTable';
-import { RiCoinLine } from '@remixicon/react';
+import { Button } from '@/components/ui/button';
+import {
+  RiAccountPinCircleLine,
+  RiCoinLine,
+  RiFileChartLine,
+  RiInstanceLine,
+  RiVerifiedBadgeLine,
+} from '@remixicon/react';
 import { ColumnDef } from '@tanstack/react-table';
 
 // TODO: sync voi api cua fmarket
@@ -200,18 +207,33 @@ const FmarketContainer = () => (
       <div className="">
         <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
       </div>
-      <div className="">
-        <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
+      <div className="grid grid-cols-2 items-center gap-4">
+        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+          <RiInstanceLine />
+          <span className="hidden text-base sm:inline-block">All Products</span>
+        </Button>
+        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+          <RiFileChartLine />
+          <span className="hidden text-base sm:inline-block">Get Report</span>
+        </Button>
+        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+          <RiVerifiedBadgeLine />
+          <span className="hidden text-base sm:inline-block">Certifcation</span>
+        </Button>
+        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+          <RiAccountPinCircleLine />
+          <span className="hidden text-base sm:inline-block">Account</span>
+        </Button>
       </div>
     </div>
-    <div className="mb-3 mt-6 grid grid-flow-dense grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-6">
+    <div className="grid-flow-column mb-3 mt-6 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-6">
       <div className=" col-span-3 row-span-4 overflow-y-auto rounded-xl border border-solid border-gray-300 p-4">
         <DataTableDemo />
       </div>
-      <div className=" auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
+      <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
         <DemoChart />
       </div>
-      <div className=" rounded-xl border border-solid border-gray-300 p-4">
+      <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
         List
       </div>
     </div>

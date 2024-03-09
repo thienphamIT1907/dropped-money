@@ -1,4 +1,5 @@
 import LogoutButton from '@/components/common/buttons/LogoutButton';
+import SettingsButton from '@/components/common/buttons/SettingsButton';
 import Logo from '@/components/common/Logo';
 import SidebarItem from '@/components/common/SidebarItem';
 import { SIDEBAR_ROUTES } from '@/constants/routes';
@@ -20,6 +21,8 @@ const SidebarMenu = () => (
       </div>
     </div>
     <div>
+      <hr />
+      <SettingsButton />
       <LogoutButton />
     </div>
   </div>

@@ -19,8 +19,8 @@ const SidebarItem = ({
         className={cn(
           'p-4 w-full rounded-lg flex justify-start items-center gap-x-4 mt-1',
           pathname === href
-            ? 'bg-blue-950 text-white shadow-md'
-            : 'hover:bg-blue-100 transition-all',
+            ? 'bg-[#0e172a] text-white shadow-md'
+            : 'hover:bg-gray-200 transition-all duration-300',
         )}
       >
         {Icon}

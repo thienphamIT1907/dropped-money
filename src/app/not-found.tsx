@@ -12,7 +12,7 @@ const NotFoundPage = () => {
     Math.floor(MIN_INDEX + Math.random() * (MAX_INDEX - MIN_INDEX + 1));
 
   return (
-    <div className="flex size-full h-[100vh] flex-col items-center justify-center gap-y-4">
+    <div className="flex size-full h-screen flex-col items-center justify-center gap-y-4">
       <Image
         alt="Not Found"
         height={500}
