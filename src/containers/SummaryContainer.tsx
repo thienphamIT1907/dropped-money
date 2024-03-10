@@ -9,7 +9,7 @@ import {
 } from '@remixicon/react';
 
 const SummaryContainer = () => (
-  <div className="grid size-full auto-rows-max grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-6 ">
+  <div className="grid size-full auto-rows-max grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4">
     <div className="col-span-1">
       <CardInfo icon={<RiArrowDownFill />} title="Earnings" />
     </div>

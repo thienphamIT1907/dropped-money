@@ -2,11 +2,11 @@ import { Badge } from '@/components/ui/badge';
 import { RiArrowRightUpLine } from '@remixicon/react';
 
 type CardInfoProps = {
-  icon: JSX.Element;
-  amount: number;
-  note: string;
-  title: string;
-  exchangeRate: string;
+  icon?: JSX.Element;
+  amount?: number;
+  note?: string;
+  title?: string;
+  exchangeRate?: string;
 };
 
 const CardInfo = ({
@@ -16,13 +16,13 @@ const CardInfo = ({
   exchangeRate,
   title,
 }: CardInfoProps) => (
-  <div className="flex flex-col items-start justify-center gap-2 rounded-xl border border-solid border-gray-300 px-6 py-4">
+  <div className="flex min-h-[140px] flex-col items-start justify-center gap-2 rounded-xl border border-solid border-gray-300 px-6 py-4">
     <section className="flex items-center gap-3">
       {icon}
       {title}
     </section>
     <section className="flex items-center gap-2">
-      <p className="inline-block pl-1 text-3xl font-semibold">$34,743</p>
+      <p className="inline-block pl-1 text-3xl font-semibold">{amount}</p>
       <Badge className="flex" variant="default">
         <RiArrowRightUpLine className="mr-1" size={15} />
         +9.3%

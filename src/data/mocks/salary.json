@@ -1,1 +1,202 @@
-{}
+{
+  "2021": {
+    "January": {
+      "salary": 0,
+      "note": ""
+    },
+    "February": {
+      "salary": 0,
+      "note": ""
+    },
+    "March": {
+      "salary": 4491304,
+      "note": ""
+    },
+    "April": {
+      "salary": 5100000,
+      "note": ""
+    },
+    "May": {
+      "salary": 5174348,
+      "note": ""
+    },
+    "June": {
+      "salary": 5370000,
+      "note": ""
+    },
+    "July": {
+      "salary": 5370000,
+      "note": ""
+    },
+    "August": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "September": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "October": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "November": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "December": {
+      "salary": 8559000,
+      "note": ""
+    }
+  },
+  "2022": {
+    "January": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "February": {
+      "salary": 8559000,
+      "note": ""
+    },
+    "March": {
+      "salary": 6105000,
+      "note": ""
+    },
+    "April": {
+      "salary": 0,
+      "note": ""
+    },
+    "May": {
+      "salary": 10909091,
+      "note": ""
+    },
+    "June": {
+      "salary": 12065455,
+      "note": ""
+    },
+    "July": {
+      "salary": 17269286,
+      "note": ""
+    },
+    "August": {
+      "salary": 14562500,
+      "note": ""
+    },
+    "September": {
+      "salary": 13987500,
+      "note": ""
+    },
+    "October": {
+      "salary": 17958500,
+      "note": ""
+    },
+    "November": {
+      "salary": 20283875,
+      "note": ""
+    },
+    "December": {
+      "salary": 27348081,
+      "note": ""
+    }
+  },
+  "2023": {
+    "January": {
+      "salary": 15849777,
+      "note": ""
+    },
+    "February": {
+      "salary": 13987500,
+      "note": ""
+    },
+    "March": {
+      "salary": 19205000,
+      "note": ""
+    },
+    "April": {
+      "salary": 16955000,
+      "note": ""
+    },
+    "May": {
+      "salary": 16505000,
+      "note": ""
+    },
+    "June": {
+      "salary": 20928600,
+      "note": ""
+    },
+    "July": {
+      "salary": 16435000,
+      "note": ""
+    },
+    "August": {
+      "salary": 16955000,
+      "note": ""
+    },
+    "September": {
+      "salary": 18665000,
+      "note": ""
+    },
+    "October": {
+      "salary": 16505000,
+      "note": ""
+    },
+    "November": {
+      "salary": 16505000,
+      "note": ""
+    },
+    "December": {
+      "salary": 16955000,
+      "note": ""
+    }
+  },
+  "2024": {
+    "January": {
+      "salary": 28670000,
+      "note": ""
+    },
+    "February": {
+      "salary": 17405000,
+      "note": ""
+    },
+    "March": {
+      "salary": 0,
+      "note": ""
+    },
+    "April": {
+      "salary": 0,
+      "note": ""
+    },
+    "May": {
+      "salary": 0,
+      "note": ""
+    },
+    "June": {
+      "salary": 0,
+      "note": ""
+    },
+    "July": {
+      "salary": 0,
+      "note": ""
+    },
+    "August": {
+      "salary": 0,
+      "note": ""
+    },
+    "September": {
+      "salary": 0,
+      "note": ""
+    },
+    "October": {
+      "salary": 0,
+      "note": ""
+    },
+    "November": {
+      "salary": 0,
+      "note": ""
+    },
+    "December": {
+      "salary": 0,
+      "note": ""
+    }
+  }
+}

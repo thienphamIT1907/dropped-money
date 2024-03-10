@@ -9,4 +9,18 @@ export interface BasicLayoutProps {
   children: ReactNode;
 }
 
-interface RealFundCertificate {}
+export interface RealFundCertificate {}
+
+export type MonthsInYear =
+  | 'January'
+  | 'February'
+  | 'March'
+  | 'April'
+  | 'May'
+  | 'June'
+  | 'July'
+  | 'August'
+  | 'September'
+  | 'October'
+  | 'November'
+  | 'December';

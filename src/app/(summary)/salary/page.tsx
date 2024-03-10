@@ -1,3 +1,5 @@
+'use client';
+
 import SalaryContainer from '@/containers/SalaryContainer';
 
 const SalaryPage = () => <SalaryContainer />;

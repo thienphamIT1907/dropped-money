@@ -8,7 +8,7 @@ import { useContext } from 'react';
 const Logo = () => {
   const { isCollapsed } = useContext(SidebarContext) as SidebarContextValue;
   return (
-    <div className={cn('my-4 flex items-center justify-center gap-x-2')}>
+    <div className={cn('m-1 flex items-center justify-center gap-x-2')}>
       <Image alt="logo.png" height={35} src="/assets/logo.png" width={35} />
 
       <h1
