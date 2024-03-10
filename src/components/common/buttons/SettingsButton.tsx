@@ -8,10 +8,16 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog';
+import { cn } from '@/lib/utils';
+import {
+  SidebarContext,
+  SidebarContextValue,
+} from '@/providers/SidebarProvider';
 import { RiLogoutBoxLine, RiSettings3Line } from '@remixicon/react';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 const SettingsButton = () => {
+  const { isCollapsed } = useContext(SidebarContext) as SidebarContextValue;
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -19,11 +25,12 @@ const SettingsButton = () => {
   };
   return (
     <div className="">
-      <hr />
       <AlertDialog>
         <AlertDialogTrigger className="mt-1 flex w-full items-center justify-start gap-x-4 rounded-lg p-4 transition-all hover:bg-blue-100">
-          <RiSettings3Line />
-          <span>Settings</span>
+          <span className="max-w-6">
+            <RiSettings3Line />
+          </span>
+          <span className={cn(isCollapsed && 'hidden')}>Settings</span>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>

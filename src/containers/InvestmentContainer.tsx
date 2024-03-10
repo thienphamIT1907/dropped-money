@@ -4,15 +4,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const InvestmentContainer = () => (
   <Tabs className="size-full" defaultValue="fmarket">
-    <TabsList className="mx-auto my-0 flex h-auto w-full max-w-[500px] items-center justify-center rounded-xl p-1">
+    <TabsList className="mx-auto my-0 flex h-auto w-full max-w-[300px] items-center justify-center rounded-xl p-1">
       <TabsTrigger
-        className="w-1/2 rounded-xl p-2 text-base"
+        className="w-1/2 rounded-xl p-1 text-base"
         value="fmarket"
         defaultChecked
       >
         Fmarket
       </TabsTrigger>
-      <TabsTrigger className="w-1/2 rounded-xl p-2 text-base" value="topi">
+      <TabsTrigger className="w-1/2 rounded-xl p-1  text-base" value="topi">
         Topi
       </TabsTrigger>
     </TabsList>

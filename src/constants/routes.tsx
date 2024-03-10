@@ -8,28 +8,28 @@ import {
 export const SIDEBAR_ROUTES: SideBarMenu[] = [
   {
     id: 1,
-    Icon: <RiHomeOfficeLine />,
+    Icon: <RiHomeOfficeLine size={25} />,
     title: 'Summary',
     isActive: true,
     href: '/',
   },
   {
     id: 2,
-    Icon: <RiWallet3Line />,
+    Icon: <RiWallet3Line size={25} />,
     title: 'Salary',
     isActive: false,
     href: '/salary',
   },
   {
     id: 3,
-    Icon: <RiStackLine />,
+    Icon: <RiStackLine size={25} />,
     title: 'Investment',
     isActive: false,
     href: '/investment',
   },
   {
     id: 4,
-    Icon: <RiArrowLeftRightLine />,
+    Icon: <RiArrowLeftRightLine size={25} />,
     title: 'Transactions',
     isActive: false,
     href: '/transactions',

@@ -1,6 +1,7 @@
 import { poppins } from '@/config/fonts';
 import { META_DATA } from '@/config/metadata';
 import { cn } from '@/lib/utils';
+import SidebarProvider from '@/providers/SidebarProvider';
 import '@/styles/global.css';
 import '@/styles/reset.css';
 import type { Metadata } from 'next';
@@ -23,7 +24,7 @@ export default function RootLayout({
           'min-h-screen bg-background antialiased',
         )}
       >
-        {children}
+        <SidebarProvider>{children}</SidebarProvider>
       </body>
     </html>
   );

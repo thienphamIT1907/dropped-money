@@ -197,7 +197,7 @@ const data: FundCertificate[] = [
 
 const FmarketContainer = () => (
   <>
-    <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-6">
+    <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-4">
       <div className="">
         <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
       </div>
@@ -226,7 +226,7 @@ const FmarketContainer = () => (
         </Button>
       </div>
     </div>
-    <div className="grid-flow-column mb-3 mt-6 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-6">
+    <div className="mb-2 mt-6 grid grid-cols-[repeat(auto-fit,_minmax(220px,_1fr))] gap-4">
       <div className=" col-span-3 row-span-4 overflow-y-auto rounded-xl border border-solid border-gray-300 p-4">
         <DataTableDemo />
       </div>

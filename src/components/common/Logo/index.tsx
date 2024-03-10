@@ -1,9 +1,26 @@
+import { cn } from '@/lib/utils';
+import {
+  SidebarContext,
+  SidebarContextValue,
+} from '@/providers/SidebarProvider';
 import Image from 'next/image';
-const Logo = () => (
-  <div className="my-4 flex items-center justify-start gap-x-2">
-    <Image alt="logo.png" height={30} src="/assets/logo.png" width={30} />
-    <h1 className=" text-center text-xl font-semibold">Dropped Money</h1>
-  </div>
-);
+import { useContext } from 'react';
+const Logo = () => {
+  const { isCollapsed } = useContext(SidebarContext) as SidebarContextValue;
+  return (
+    <div className={cn('my-4 flex items-center justify-center gap-x-2')}>
+      <Image alt="logo.png" height={35} src="/assets/logo.png" width={35} />
+
+      <h1
+        className={cn(
+          'truncate text-center text-xl font-semibold',
+          isCollapsed && 'hidden',
+        )}
+      >
+        Dropped Money
+      </h1>
+    </div>
+  );
+};
 
 export default Logo;
