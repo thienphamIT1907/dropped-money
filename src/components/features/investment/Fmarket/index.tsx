@@ -200,7 +200,7 @@ const FmarketContainer = () => {
   useEffect(() => {
     fetch('http://localhost:3000/api/fmarket', {
       method: 'POST',
-    }).then((res) => console.log(res));
+    });
   }, []);
 
   return (
