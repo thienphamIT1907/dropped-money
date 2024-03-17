@@ -12,6 +12,7 @@ import {
   RiVerifiedBadgeLine,
 } from '@remixicon/react';
 import { ColumnDef } from '@tanstack/react-table';
+import { useEffect } from 'react';
 
 // TODO: sync voi api cua fmarket
 export type FundCertificate = {
@@ -195,51 +196,74 @@ const data: FundCertificate[] = [
   },
 ];
 
-const FmarketContainer = () => (
-  <>
-    <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-4">
-      <div className="">
-        <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
-      </div>
-      <div className="">
-        <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
-      </div>
-      <div className="">
-        <CardInfo amount={9433682} icon={<RiCoinLine />} title="Total Assets" />
-      </div>
-      <div className="grid grid-cols-2 items-center gap-4">
-        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
-          <RiInstanceLine />
-          <span className="hidden text-base sm:inline-block">All Products</span>
-        </Button>
-        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
-          <RiFileChartLine />
-          <span className="hidden text-base sm:inline-block">Get Report</span>
-        </Button>
-        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
-          <RiVerifiedBadgeLine />
-          <span className="hidden text-base sm:inline-block">Certifcation</span>
-        </Button>
-        <Button className="flex h-full items-center justify-center gap-x-2 p-2">
-          <RiAccountPinCircleLine />
-          <span className="hidden text-base sm:inline-block">Account</span>
-        </Button>
-      </div>
-    </div>
-    <div className="mb-2 mt-6 grid grid-cols-[repeat(auto-fit,_minmax(220px,_1fr))] gap-4">
-      <div className=" col-span-3 row-span-4 overflow-y-auto rounded-xl border border-solid border-gray-300 p-4">
-        <DataTableDemo />
-      </div>
-      <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
-        <DemoChart />
-      </div>
-      <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
-        List
-      </div>
-    </div>
-  </>
-);
+const FmarketContainer = () => {
+  useEffect(() => {
+    fetch('http://localhost:3000/api/fmarket', {
+      method: 'POST',
+    }).then((res) => console.log(res));
+  }, []);
 
+  return (
+    <>
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-4">
+        <div className="">
+          <CardInfo
+            amount={9433682}
+            icon={<RiCoinLine />}
+            title="Total Assets"
+          />
+        </div>
+        <div className="">
+          <CardInfo
+            amount={9433682}
+            icon={<RiCoinLine />}
+            title="Total Assets"
+          />
+        </div>
+        <div className="">
+          <CardInfo
+            amount={9433682}
+            icon={<RiCoinLine />}
+            title="Total Assets"
+          />
+        </div>
+        <div className="grid grid-cols-2 items-center gap-4">
+          <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+            <RiInstanceLine />
+            <span className="hidden text-base sm:inline-block">
+              All Products
+            </span>
+          </Button>
+          <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+            <RiFileChartLine />
+            <span className="hidden text-base sm:inline-block">Get Report</span>
+          </Button>
+          <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+            <RiVerifiedBadgeLine />
+            <span className="hidden text-base sm:inline-block">
+              Certifcation
+            </span>
+          </Button>
+          <Button className="flex h-full items-center justify-center gap-x-2 p-2">
+            <RiAccountPinCircleLine />
+            <span className="hidden text-base sm:inline-block">Account</span>
+          </Button>
+        </div>
+      </div>
+      <div className="mb-2 mt-6 grid grid-cols-[repeat(auto-fit,_minmax(220px,_1fr))] gap-4">
+        <div className=" col-span-3 row-span-4 overflow-y-auto rounded-xl border border-solid border-gray-300 p-4">
+          <DataTableDemo />
+        </div>
+        <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
+          <DemoChart />
+        </div>
+        <div className="auto-cols-auto rounded-xl border border-solid border-gray-300 p-4">
+          List
+        </div>
+      </div>
+    </>
+  );
+};
 export default FmarketContainer;
 
 /** fetch api

@@ -339,10 +339,11 @@ const mockDataAllYear: salaryDataResponse = {
 const options: ChartOptions<'bar'> = {
   responsive: true,
   maintainAspectRatio: false,
+  aspectRatio: 1,
   indexAxis: 'x' as const,
   elements: {
     bar: {
-      borderWidth: 2,
+      borderWidth: 1,
     },
   },
   plugins: {
@@ -377,7 +378,7 @@ const SalaryChart = () => {
       mockDataAllYear.data[prop].map(({ month, salary }) => {
         if (salary !== 0) {
           data.push(salary);
-          labels.push(`${getMonthFromString(month)}/${prop.slice(2)}`);
+          labels.push(`${getMonthFromString(month)}/${prop}`);
         }
       });
     }
@@ -403,7 +404,8 @@ const SalaryChart = () => {
             },
           ],
         }}
-        height={400}
+        className="overflow-auto"
+        height={300}
         options={options}
         width="100%"
       />

@@ -5,6 +5,7 @@ import SidebarProvider from '@/providers/SidebarProvider';
 import '@/styles/global.css';
 import '@/styles/reset.css';
 import type { Metadata } from 'next';
+import 'react-day-picker/dist/style.css';
 
 export const metadata: Metadata = META_DATA;
 
